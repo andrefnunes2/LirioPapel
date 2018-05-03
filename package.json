@@ -1,0 +1,26 @@
+{
+  "name": "liriopapel",
+  "version": "1.0.0",
+  "description": "Lírio de Papel - Artesanato com Scrapbook",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "artesanato",
+    "book",
+    "scrap",
+    "scrapbook",
+    "arte",
+    "lírio",
+    "papel",
+    "presente",
+    "album"
+  ],
+  "author": "Nunes & Ueda Tecnologia <andrefnunes2@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.9",
+    "express": "^4.16.3"
+  }
+}
