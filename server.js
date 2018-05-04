@@ -11,8 +11,8 @@ var port = process.env.PORT || 8080;
 
 // middleware
 app.use(morgan('dev'));
-app.use(express.static(__dirname + 'app'));
-app.use(express.static(__dirname + 'node_modules'));
+app.use(express.static(__dirname + '/app'));
+app.use(express.static(__dirname + '/node_modules'));
 
 // server
 app.get('*', function (req, res) {

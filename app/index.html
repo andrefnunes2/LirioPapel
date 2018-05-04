@@ -1,24 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     
+    <title>Lírio de Papel</title>
+
+    <!-- node_modules -->
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css">
+    <!-- base -->
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <!-- modules -->
+    <link rel="stylesheet" href="modules/home/home.component.css">
+    <!-- components -->
+    <link rel="stylesheet" href="components/header/header.component.css">
+    <link rel="stylesheet" href="components/footer/footer.component.css">
 </head>
-<body>
+<body data-ng-app="App">
 
-<header>
-    Cabeçalho
-</header>
-
-<main>
-    <div class="container">
-        <h1>This is great</h1>
-        <p>Welcome to templating using EJS</p>
+    <div data-ng-controller="AppController as vm" data-ng-cloak>
+        <app-header></app-header>
+        <main class="container" data-ng-view></main>
+        <app-footer></app-footer> 
     </div>
-</main>
 
-<footer>
-    Rodape
-</footer>
+    <!-- node_modules -->
+    <script src="/angular/angular.min.js"></script>
+    <script src="/angular-route/angular-route.min.js"></script>
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- app -->
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="app.controller.js"></script>
 
+    <!-- modules -->
+    <script src="modules/home/home.component.js"></script>
+    <!-- components -->
+    <script src="components/header/header.component.js"></script>
+    <script src="components/footer/footer.component.js"></script>
 </body>
 </html>
