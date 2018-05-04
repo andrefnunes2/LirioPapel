@@ -1,10 +1,23 @@
-const express = require('express');
-const app = express();
+// express
+var express = require('express');
+var path = require('path');
+var app = express();
 
-app.set('view engine', 'ejs');
+// middleware
+var morgan = require('morgan');
 
-app.get('/', (req, res) => res.render('index'));
-app.get('/about', (req, res) => res.render('about'));
+// variables
+var port = process.env.PORT || 8080;
 
-app.listen(3000, () => console.log('Server rodando na porta 3000!'));
+// middleware
+app.use(morgan('dev'));
+app.use(express.static(__dirname + 'app'));
+app.use(express.static(__dirname + 'node_modules'));
 
+// server
+app.get('*', function (req, res) {
+    res.sendFile(path.join(__dirname + '/app/index.html'));
+});
+app.listen(port, function () {
+    console.log('Running the server on port ' + port + '.');
+});
