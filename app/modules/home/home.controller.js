@@ -5,7 +5,7 @@
 		.module('App')
 		.controller('HomeController', HomeController)
 		.component('home', {
-			templateUrl: './modules/home/home.component.html',
+			templateUrl: './modules/home/home.html',
 			controller: 'HomeController',
 			controllerAs: 'vm'
 		});

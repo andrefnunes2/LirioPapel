@@ -1,5 +1,4 @@
-body {
-	font-family: 'opensans';
-	font-style: normal;
-	font-weight: 400;
-}
+body 				{ font-family: 'opensans'; font-style: normal; font-weight: 400; }
+header				{ background-color: #18223d; color:#fff; padding:10px 0; }
+
+nav a 				{ color:#fff; }

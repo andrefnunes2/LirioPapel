@@ -19,8 +19,13 @@
 		$locationProvider.html5Mode(true);
 		$routeProvider
 		.when('/', {
-			templateUrl: 	'./modules/home/home.component.html',
+			templateUrl: 	'./modules/home/home.html',
 			controller: 	'HomeController',
+			controllerAs: 	'vm'
+		})
+		.when('/about', {
+			templateUrl: 	'./modules/about/about.html',
+			controller: 	'AboutController',
 			controllerAs: 	'vm'
 		});
 		
