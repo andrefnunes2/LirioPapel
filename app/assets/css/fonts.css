@@ -1,9 +1,21 @@
 @font-face {
+    font-family: 'oilbats';
+	src:	url('../fonts/oilbats-basic.eot');
+	src:  	url('../fonts/oilbats-basic.eot?#iefix') format('embedded-opentype'), 
+			url('../fonts/oilbats-basic.woff2') format('woff2'), 
+			url('../fonts/oilbats-basic.woff') format('woff'), 
+			url('../fonts/oilbats-basic.ttf') format('truetype'), 
+			url('../fonts/oilbats-basic.svg#oilbats_basic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
 	font-family: 'opensans';
 	font-style: normal;
 	font-weight: 800;
 	src:	url('../fonts/opensans-extrabold-normal.eot');
-	src:  url('../fonts/opensans-extrabold-normal.eot?#iefix') format('embedded-opentype'), 
+	src:  	url('../fonts/opensans-extrabold-normal.eot?#iefix') format('embedded-opentype'), 
 			url('../fonts/opensans-extrabold-normal.woff2') format('woff2'), 
 			url('../fonts/opensans-extrabold-normal.woff') format('woff'), 
 			url('../fonts/opensans-extrabold-normal.ttf') format('truetype'), 

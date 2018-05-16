@@ -8,10 +8,10 @@
 			</div>
 			<div class="col-sm-8">
 				<nav>
-					<a href="/" class="btn btn-info" role="button">Home</a>
-					<a href="/about" class="btn btn-info" role="button">Quem Somos</a>
-					<a href="/" class="btn btn-info" role="button">Produtos</a>
-					<a href="/" class="btn btn-info" role="button">Contato</a>
+					<a data-ng-repeat="obj in vm.menu" 
+						data-ng-class="{'active':vm.getMenuActive(obj.url)}" 
+						data-ng-href="{{obj.url}}" 
+						class="btn" role="button">{{obj.title}}</a>
 				</nav>
 			</div>
 		</div>
