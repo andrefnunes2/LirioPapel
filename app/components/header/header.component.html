@@ -10,7 +10,8 @@
 				<nav>
 					<a data-ng-repeat="obj in vm.menu" 
 						data-ng-class="{'active':vm.getMenuActive(obj.url)}" 
-						data-ng-href="{{obj.url}}" 
+						data-ng-href="{{obj.url}}"
+						target="{{obj.out}}" 
 						class="btn" role="button">{{obj.title}}</a>
 				</nav>
 			</div>

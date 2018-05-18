@@ -5,6 +5,12 @@
 	angular
 		.module('App')
 		.config(ConfigProvider)
+		.run(function ($rootScope) {
+			console.log("OPA");
+            $rootScope.$on("$stateChangeSuccess", function (event, next, current) {
+				footerBottom();
+			});
+        });
 
 	ConfigProvider.$inject = [
 		'$locationProvider',

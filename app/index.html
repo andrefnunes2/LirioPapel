@@ -17,13 +17,11 @@
     <link rel="stylesheet" href="components/header/header.component.css">
     <link rel="stylesheet" href="components/footer/footer.component.css">
 </head>
-<body data-ng-app="App">
+<body data-ng-app="App" data-ng-controller="AppController as vm" data-ng-cloak>
 
-    <div data-ng-controller="AppController as vm" data-ng-cloak>
-        <app-header></app-header>
-        <main class="container" data-ng-view></main>
-        <app-footer></app-footer> 
-    </div>
+    <app-header></app-header>
+    <main class="container" data-ng-view></main>
+    <app-footer></app-footer>
 
     <!-- node_modules -->
     <script src="/angular/angular.min.js"></script>
@@ -32,10 +30,11 @@
     <script src="/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     
     <!-- app -->
+    <script src="assets/js/utils.js"></script>
     <script src="app.module.js"></script>
     <script src="app.config.js"></script>
     <script src="app.controller.js"></script>
-
+    
     <!-- modules -->
     <script src="modules/home/home.controller.js"></script>
     <script src="modules/about/about.controller.js"></script>

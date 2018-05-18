@@ -1,9 +1,16 @@
-body 				{ font-family: 'opensans'; font-style: normal; font-weight: 400; }
-header				{ background-color: #105171; color:#fff; padding:10px 0 15px; }
 
-nav a 		        { color:#fff; font-family: 'oilbats'; font-size: 20px!important; }
+html, body                  { height:100%; }
+html, body, 
+app-header, app-footer      { width:100%; display: inline-block; }
+body 				        { font-family: 'opensans'; font-style: normal; font-weight: 400; }
+header				        { background-color: #105171; color:#fff; padding:10px 0 15px; border-bottom:2px solid #ECC256; }
+
+nav a 		                { color:#fff; font-family: 'oilbats'; font-size: 20px!important; }
 nav a:hover,
-nav a.active 		{ color:#ECC256; }
-a:focus {
-    outline: 0;
-    }
+nav a.active 		        { color:#ECC256; }
+
+.footerBottom               { position:absolute; }
+app-footer                  { bottom:0; left:0; }
+footer                      { background-color: #105171; padding:5px 0; border-top:3px solid #ECC256; }
+footer .recLogo             { padding:15px 0; }
+footer .recLogo img         { margin:0 auto; display: block; }
