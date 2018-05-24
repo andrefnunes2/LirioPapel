@@ -21,7 +21,7 @@
 			{title:'Sobre mim', url:'/sobre'},
 			{title:'O que faço', url:'/o-que-faco'},
 			{title:'Onde trabalho', url:'/onde-trabalho'},
-			{title:'Loja virtual', url:'https://www.elo7.com.br/lucianamurta', out:'_blank'},
+			//{title:'Loja virtual', url:'https://www.elo7.com.br/lucianamurta', out:'_blank'},
 			{title:'Contato', url:'/contato'}
 		];
 

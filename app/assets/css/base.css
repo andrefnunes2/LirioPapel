@@ -4,18 +4,24 @@ html, body,
 app-header, app-footer      { width:100%; display: inline-block; }
 body 				        { font-family: 'opensans'; font-style: normal; font-weight: 400; }
 
-header nav                  { color:#fff; border-bottom:2px solid #ECC256; transition: all 0.5s ease; background-color: rgba(16,81,113,1); }
+header nav                  { color:#fff; border-bottom:2px solid #d7bc76; transition: all 0.5s ease; background-color: rgba(24,67,86,1); }
 header nav #logo            { height: 80px; transition: all 0.5s ease; }
-header .navbar-shrink       { padding:0; background:rgba(16,81,113,0.9); }
-header .navbar-shrink #logo { height: 50px; }
+header .navbar-shrink       { padding:0; border-bottom:0px solid #d7bc76; }
+header .navbar-shrink #logo { height: 40px; }
 header nav .navbar-toggler  { font-family: 'oilbats'; color:#fff!important; }
 header nav ul               { list-style: none; margin:0; padding:0; }
 header nav ul li a 		    { color:#fff; font-family:'oilbats'; font-size: 20px!important; }
 header nav ul li a:hover,
-header nav ul li a.active 	{ color:#ECC256; }
+header nav ul li a.active 	{ color:#d7bc76; }
 
-main                        { padding-top: 75px; }
+main                        { padding-top: 74px; }
 
-footer                      { background-color: #105171; padding:5px 0; border-top:3px solid #ECC256; }
+footer                      { 
+    padding:25px 0; border-bottom: 1px solid rgba(24,67,86,1);
+    background: -moz-linear-gradient(top, rgba(24,67,86,0) 0%, rgba(24,67,86,0) 75%, rgba(24,67,86,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(24,67,86,0) 0%,rgba(24,67,86,0) 75%,rgba(24,67,86,1) 100%);
+    background: linear-gradient(to bottom, rgba(24,67,86,0) 0%,rgba(24,67,86,0) 75%,rgba(24,67,86,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#184356', endColorstr='#00184356',GradientType=0 );
+}
 footer .recLogo             { padding:15px 0; }
 footer .recLogo img         { margin:0 auto; display: block; }
